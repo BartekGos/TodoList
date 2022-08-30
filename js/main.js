@@ -54,7 +54,7 @@ const crearteToolsArea = () => {
 	removeBtn.classList.add('delete')
 	removeBtn.innerHTML = '<i class="fas fa-times"></i>'
 
-	toolsPanel.append(compliteBtn, editBtn, removeBtn)
+	toolsPanel.append(completeBtn, editBtn, removeBtn)
 }
 
 const checkClick = e => {
