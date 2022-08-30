@@ -42,9 +42,9 @@ const crearteToolsArea = () => {
 	const toolsPanel = document.createElement('div')
 	toolsPanel.classList.add('tools')
 	newTodos.append(toolsPanel)
-	const compliteBtn = document.createElement('button')
-	compliteBtn.classList.add('complete')
-	compliteBtn.innerHTML = '<i class="fas fa-check"></i>'
+	const completeBtn = document.createElement('button')
+	completeBtn.classList.add('complete')
+	completeBtn.innerHTML = '<i class="fas fa-check"></i>'
 
 	const editBtn = document.createElement('button')
 	editBtn.classList.add('edit')
@@ -65,6 +65,8 @@ const checkClick = e => {
 		editTodo(e)
 	} else if (e.target.matches('.delete')) {
 		deleteTodo(e)
+		closePopup()
+	
 	}
 }
 
